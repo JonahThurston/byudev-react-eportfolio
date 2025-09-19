@@ -20,10 +20,10 @@ const illustration = {
 };
 
 const greeting = {
-  username: "Jacob Nef",
-  title: "Hey, I'm Jacob!",
+  username: "Jonah Thurston",
+  title: "Hi! I'm Jonah",
   subTitle: emoji(
-    "I'm a Computer Science student at Brigham Young University with an emphasis in Software Engineering. I currently work as a Web Developer at BYU, writing unit tests, developing websites, and leading teams to deliver high-quality software solutions."
+    "I'm a Computer Science student at BYU's Center for Family History and Genealogy. I currently work as a Web Developer at BYU, writing unit tests, developing websites, and leading teams to deliver high-quality software solutions."
   ),
   resumeLink:
     "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button. this link doesn't need to be replaced to get your resume in the site. Follow the README instructions for that.
@@ -33,15 +33,8 @@ const greeting = {
 // Social Media Links
 
 const socialMediaLinks = {
-  github: "https://github.com/jakenef",
-  linkedin: "https://www.linkedin.com/in/jacob-nef/",
-  gmail: "saadpasta70@gmail.com",
-  //gitlab: "https://gitlab.com/saadpasta",
-  //facebook: "https://www.facebook.com/saad.pasta7",
-  //medium: "https://medium.com/@saadpasta",
-  //stackoverflow: "https://stackoverflow.com/users/10422806/saad-pasta",
-  // Instagram, Twitter and Kaggle are also supported in the links!
-  // To customize icons and social links, tweak src/components/SocialMedia
+  github: "https://github.com/JonahThurston",
+  linkedin: "https://www.linkedin.com/in/jonah-thurston-5bb1022a0/",
   display: true // Set true to display this section, defaults to false
 };
 
@@ -49,21 +42,25 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "What I do",
-  subTitle: "DEDICATED FULL-STACK ENGINEER WHO LOVES TO LEARN",
+  subTitle: "DEDICATED WEB DEVELOPER WHO LEARNS QUICKLY",
   skills: [
     emoji(
-      "⚡ Develop highly interactive user interfaces for web applications"
+      "⚡ Develop highly interactive and reactive user interfaces for web applications"
     ),
-    emoji("⚡ Write hundreds of unit tests in Java and TypeScript to catch edge cases"),
     emoji(
-      "⚡ Lead teams of 2-6 programmers to deliver 6+ projects on time"
-    )
+      "⚡ Write huge tests suites in playwright and vitest to catch edge cases"
+    ),
+    emoji("⚡ Lead teams of 4 programmers to deliver 6+ projects on time")
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
 https://fontawesome.com/icons?d=gallery */
 
   softwareSkills: [
+    {
+      skillName: "Angular",
+      fontAwesomeClassname: "fab fa-react"
+    },
     {
       skillName: "html-5",
       fontAwesomeClassname: "fab fa-html5"
@@ -73,11 +70,11 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fab fa-css3-alt"
     },
     {
-      skillName: "sass",
-      fontAwesomeClassname: "fab fa-sass"
+      skillName: "JavaScript / Typescript",
+      fontAwesomeClassname: "fab fa-js"
     },
     {
-      skillName: "JavaScript",
+      skillName: "PHP",
       fontAwesomeClassname: "fab fa-js"
     },
     {
@@ -87,10 +84,6 @@ https://fontawesome.com/icons?d=gallery */
     {
       skillName: "nodejs",
       fontAwesomeClassname: "fab fa-node"
-    },
-    {
-      skillName: "swift",
-      fontAwesomeClassname: "fab fa-swift"
     },
     {
       skillName: "npm",
@@ -131,22 +124,13 @@ const educationInfo = {
       logoPosition: "center", // Optional: center, top, bottom, left, right, or specific like "center top"
       logoScale: 1.2, // Optional: zoom factor for logo within the FIXED circle (e.g., 0.8 = zoomed out, 1.5 = zoomed in, circle size never changes)
       subHeader: "Bachelor of Science in Computer Science",
-      duration: "September 2021 - April 2027",
-      desc: "2x Dean's List Recipient (Top 5% of class)",
+      duration: "September 2020 - April 2025",
+      desc: "GPA: 3.26",
       descBullets: [
-        "President of BYU Developer's Club",
-        "Researched ... "
+        "Advanced Algorithms",
+        "Software Business",
+        "Artificial Intelligence"
       ]
-    },
-    {
-      schoolName: "Stanford University",
-      logo: require("./assets/images/stanfordLogo.png"),
-      logoPosition: "center",
-      logoScale: 1,
-      subHeader: "Bachelor of Science in Computer Science",
-      duration: "September 2013 - April 2017",
-      desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
-      descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
     }
   ]
 };
@@ -178,29 +162,23 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Software Engineer",
-      company: "Facebook",
-      companylogo: require("./assets/images/facebookLogo.png"),
-      date: "June 2018 – Present",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      role: "Web Developer",
+      company: "Center for Family History And Genealogy",
+      companylogo: require("./assets/images/byuMedallionNavy.png"),
+      date: "April 2024 – Present",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Lead a team of four developers building backend features for a large-scale census digitizing platform, balancing feature development with ongoing system support.",
+        "Optimized relational databases with over 500,000 entries by tuning queries and restructuring schemas, improving system performance and reliability.",
+        "Implemented an automated testing suite that reduced manual QA time and improved release confidence",
+        "Collaborated with non-technical stakeholders to troubleshoot user issues and deliver timely fixes, ensuring uninterrupted system functionality."
       ]
     },
     {
-      role: "Front-End Developer",
-      company: "Quora",
-      companylogo: require("./assets/images/quoraLogo.png"),
-      date: "May 2017 – May 2018",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    },
-    {
-      role: "Software Engineer Intern",
-      company: "Airbnb",
-      companylogo: require("./assets/images/airbnbLogo.png"),
-      date: "Jan 2015 – Sep 2015",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      role: "Teachers Assistant",
+      companylogo: require("./assets/images/byuMedallionNavy.png"),
+      company: "BYU",
+      date: "January 2024 – May 2024",
+      desc: "Supported 300+ students in mastering graph theory, algorithms, time complexity, and C++ concepts."
     }
   ]
 };
@@ -210,7 +188,7 @@ To know how to get github key look at readme.md */
 
 const openSource = {
   showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Some big projects you have worked on
@@ -220,26 +198,15 @@ const bigProjects = {
   subtitle: "SOME PERSONAL AND SCHOOL PROJECTS",
   projects: [
     {
-      image: require("./assets/images/chessScreenshot.png"),
-      projectName: "Chess Game",
-      projectDesc: "Features a networked client-server architecture, with a command-line client, a server to manage users and games, and shared modules for implementing chess rules and game state management.",
+      projectName: "Core Values App",
+      projectDesc:
+        "A full-stack web app in Angular with complex state management, applying object-oriented principles and UI pattern design. Hosted on Firebase, developed primarily for mobile.",
       footerLink: [
         {
-          name: "See Github",
-          url: "http://github.com/jakenef/chess"
+          name: "Check it out!",
+          url: "https://core-values--core-values-8baab.us-central1.hosted.app/about"
         }
         //  you can add extra buttons here.
-      ]
-    },
-    {
-      image: require("./assets/images/nextuLogo.webp"),
-      projectName: "260 Project",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      footerLink: [
-        {
-          name: "Visit Website",
-          url: "http://nextu.se/"
-        }
       ]
     }
   ],
@@ -304,7 +271,7 @@ const achievementSection = {
       ]
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Blogs Section
@@ -376,8 +343,8 @@ const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle:
     "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+92-0000000000",
-  email_address: "saadpasta70@gmail.com"
+  number: "480-349-3591",
+  email_address: "jonah.m.thurston@gmail.com"
 };
 
 // Twitter Section
